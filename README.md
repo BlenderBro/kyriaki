@@ -1,6 +1,6 @@
 # studios-kyriaki
 
-> A Vue.js project
+> Presentation site for a hotel with booking component
 
 ## Build Setup
 
