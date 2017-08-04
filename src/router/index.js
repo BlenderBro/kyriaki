@@ -1,13 +1,18 @@
+// Utils
 import Vue from 'vue'
 import Router from 'vue-router'
 import NProgress from 'vue-nprogress'
-import Hello from '@/components/Hello'
+
+// Components
+import lost_page from '@/components/errors/404'
+import Landing from '@/components/Landing'
 import Test from '@/components/Test'
 
 Vue.use(Router)
 
 const routes = [
-    { path: '/', name: 'Hello', component: Hello },
+    { path: '*', component: 404 },
+    { path: '/', name: 'Landing', component: Landing },
     { path: '/test', name: 'Test', component: Test }
   ]
 

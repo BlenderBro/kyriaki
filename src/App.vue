@@ -12,7 +12,7 @@
 					<a href="/">
 						<div class="logo-container">
 							<div class="logo">
-								<img style="max-width:40%" class="img-responsive" src='../static/img/logo_new.png' alt="Kyriaki Logo" rel="tooltip" title="Website Designed & Coded with care by <b>Facepunch Digital</b>" data-placement="bottom" data-html="true">
+								<img style="max-width:30%" class="img-responsive" src='../static/img/logo_new.png' alt="Kyriaki Logo" rel="tooltip" title="Website Designed & Coded with care by <b>Facepunch Digital</b>" data-placement="bottom" data-html="true">
 							</div>               
 						</div>
 					</a>
@@ -47,19 +47,11 @@
 		<div class="wrapper">
 			<div class="header header-filter" style="background-image: url('../static/img/thassos2.jpg');">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<h1 class="title">Write the best title for your page.</h1>
-							<h4>Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
-							<br />
-							<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
-								<i class="fa fa-play"></i> Watch video
-							</a>
-						</div>
-					</div>
+					<bookroom></bookroom>
 				</div>
 			</div>
 			<div class="main main-raised">
+				
 				<div class="container">
 					<router-view></router-view>
 				</div>
@@ -101,9 +93,12 @@
 </template>
 
 <script>
+import bookroom from './components/BookRoom.vue'
 export default {
 	name: 'app',
-
+	components: {
+		bookroom
+	}
 }
 </script>
 
@@ -112,7 +107,7 @@ export default {
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
+	/* text-align: center; */
 	color: #2c3e50;
 }
 </style>
