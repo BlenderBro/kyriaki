@@ -3,8 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import NProgress from 'nprogress'
 
 Vue.config.productionTip = false
+
+router.beforeEach((to, from, next) => {
+	NProgress.start();
+	next();
+	NProgress.done()
+})
 
 /* eslint-disable no-new */
 new Vue({
