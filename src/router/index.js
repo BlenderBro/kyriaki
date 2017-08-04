@@ -11,7 +11,7 @@ import Test from '@/components/Test'
 Vue.use(Router)
 
 const routes = [
-    { path: '*', component: 404 },
+    { path: '*', component: lost_page },
     { path: '/', name: 'Landing', component: Landing },
     { path: '/test', name: 'Test', component: Test }
   ]

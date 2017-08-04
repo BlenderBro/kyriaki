@@ -5,7 +5,7 @@ TODO: Rename this to someting appropriate
 <template>
     <div style="padding-top:15em;" class="col-md-12">
         <div class="col-md-12 booking">
-            <h3>Rezervare</h3>
+            <h3>Verifica disponibilitatea</h3>
             <div class="col-md-2 dropdown">
                 <select class="form-control dropdown">
                     <option value="one">Tipul Camerei</option>

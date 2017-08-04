@@ -1,3 +1,13 @@
+<script>
+import bookroom from './components/BookRoom.vue'
+export default {
+	name: 'app',
+	components: {
+		bookroom
+	}
+}
+</script>
+
 <template>
 	<div id="app">
 		<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
@@ -61,53 +71,30 @@
 					<nav class="pull-left">
 						<ul>
 							<li>
-								<a href="http://www.creative-tim.com">
-									Creative Tim
+								<a href="#">
+									Despre Noi
 								</a>
-							</li>
+							</li>							
 							<li>
-								<a href="http://presentation.creative-tim.com">
-									About Us
-								</a>
-							</li>
-							<li>
-								<a href="http://blog.creative-tim.com">
-									Blog
-								</a>
-							</li>
-							<li>
-								<a href="http://www.creative-tim.com/license">
-									Licenses
+								<a href="#">
+									Termeni si Conditii
 								</a>
 							</li>
 						</ul>
 					</nav>
-					<div class="copyright pull-right">
-						&copy; 2016, made with
-						<i class="fa fa-heart heart"></i> by Creative Tim
-					</div>
+					<div class="copyright pull-right">&copy; 2017</div>
 				</div>
 			</footer>
 		</div>
 	</div>
 </template>
 
-<script>
-import bookroom from './components/BookRoom.vue'
-export default {
-	name: 'app',
-	components: {
-		bookroom
-	}
-}
-</script>
-
 <style>
-#app {
+/* #app {
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	/* text-align: center; */
+	 text-align: center; 
 	color: #2c3e50;
-}
+} */
 </style>
